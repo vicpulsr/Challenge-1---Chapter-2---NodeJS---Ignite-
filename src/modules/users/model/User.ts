@@ -5,7 +5,7 @@ class User {
 
   name: string;
 
-  admin: boolean;
+  admin?: boolean;
 
   email: string;
 
