@@ -86,7 +86,7 @@
                 "tags": [
                     "Users"
                 ],
-                "summary": "Retorma todos usuários",
+                "summary": "Retorna todos usuários",
                 "parameters": [
                     {
                         "name": "user_id",
@@ -102,7 +102,7 @@
                 "description": "Somente usuário admin pode acessar",
                 "responses": {
                     "200": {
-                        "description": "Success",
+                        "description": "Operação realizada com sucesso",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -192,26 +192,35 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "name": {
-                                                "type": "string"
-                                            },
-                                            "email": {
-                                                "type": "string"
-                                            }
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "email": {
+                                            "type": "string"
+                                        },
+                                        "admin": {
+                                            "type": "boolean"
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "created_at": {
+                                            "type": "string"
+                                        },
+                                        "updated_at": {
+                                            "type": "string"
                                         }
-                                    },
-                                    "example": {
-                                        "id": "eeb53968-436c-4b93-830f-5c9017514143",
-                                        "admin": false,
-                                        "name": "nome do usuário",
-                                        "email": "emaildousuário",
-                                        "created_at": "2021-11-11T13:18:04.724Z",
-                                        "updated_at": "2021-11-11T13:18:04.724Z"
                                     }
+                                },
+                                "example": {
+                                    "id": "eeb53968-436c-4b93-830f-5c9017514143",
+                                    "admin": true,
+                                    "name": "nome do usuário",
+                                    "email": "emaildousuário",
+                                    "created_at": "2021-11-11T13:18:04.724Z",
+                                    "updated_at": "2021-11-11T13:18:04.724Z"
                                 }
                             }
                         }
@@ -255,26 +264,35 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "name": {
-                                                "type": "string"
-                                            },
-                                            "email": {
-                                                "type": "string"
-                                            }
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "email": {
+                                            "type": "string"
+                                        },
+                                        "admin": {
+                                            "type": "boolean"
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "created_at": {
+                                            "type": "string"
+                                        },
+                                        "updated_at": {
+                                            "type": "string"
                                         }
-                                    },
-                                    "example": {
-                                        "id": "eeb53968-436c-4b93-830f-5c9017514143",
-                                        "admin": false,
-                                        "name": "nome do usuário",
-                                        "email": "emaildousuário",
-                                        "created_at": "2021-11-11T13:18:04.724Z",
-                                        "updated_at": "2021-11-11T13:18:04.724Z"
                                     }
+                                },
+                                "example": {
+                                    "id": "eeb53968-436c-4b93-830f-5c9017514143",
+                                    "admin": false,
+                                    "name": "nome do usuário",
+                                    "email": "emaildousuário",
+                                    "created_at": "2021-11-11T13:18:04.724Z",
+                                    "updated_at": "2021-11-11T13:18:04.724Z"
                                 }
                             }
                         }
